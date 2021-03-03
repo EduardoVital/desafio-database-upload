@@ -32,6 +32,6 @@ export default class AddCategoryIdToTransactions1614716484252
 
   public async down(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.dropForeignKey('transactions', 'TransactionCategory');
-    await queryRunner.dropColumn('Transactions', 'category_id');
+    await queryRunner.dropColumn('transactions', 'category_id');
   }
 }
